@@ -8,6 +8,8 @@ const Home = () => {
 
   const filterProducts = products.filter(item => item.category === "men's clothing" || item.category === "women's clothing")
   
+
+  
   return (
     <div className='mx-0'>
       <Hero />

@@ -1,6 +1,8 @@
 import React, { useContext } from 'react'
 import { IoMdArrowForward } from 'react-icons/io'
 import { AiFillDelete } from 'react-icons/ai'
+import {BsArrowDownCircle } from 'react-icons/bs'
+
 import CartItem from './CartItem'
 import { SideBarContext } from '../contexts/SideBarContext'
 import {CartContext} from '../contexts/CartContext' 
@@ -36,8 +38,11 @@ const SideBar = () => {
           <button className='text-white py-2 w-full'>View Cart</button>
         </div>
         
-        <div className='flex justify-center items-start bg-[#274C77] hover:bg-opacity-95 rounded-lg'>
-          <button className='text-white py-2 w-full'>Checkout</button>
+        <div className='flex justify-around items-center bg-[#274C77] hover:bg-opacity-95 rounded-lg cursor-pointer'>
+          <div className='flex items-center justify-center gap-x-2 '>
+          <button className='text-white py-2'>Order Now</button>
+          <BsArrowDownCircle className='text-2xl text-blue-400 animate-bounce opacity-95'/>
+          </div>
         </div>
       
       </div>
